@@ -3,7 +3,7 @@ import java.net.*;
 import java.util.ArrayList;
 
 public class WishesServer {
-    public static void main(String args[]) throws Exception
+    /*public static void main(String args[]) throws Exception
     {
         try{
             int serverPort = 5000;
@@ -38,7 +38,7 @@ public class WishesServer {
                 System.out.println("Turn off the server by timeout");
             }
         }
-        /*ServerSocket sersock = new ServerSocket(5000);
+        *//*ServerSocket sersock = new ServerSocket(5000);
         System.out.println("server is ready");  //  message to know the server is running
         Socket sock = sersock.accept();
 
@@ -46,6 +46,6 @@ public class WishesServer {
         DataInputStream dstream = new DataInputStream(istream);
         String message2 = dstream.readLine();
         System.out.println(message2);
-        dstream .close(); istream.close(); sock.close(); sersock.close();*/
-    }
+        dstream .close(); istream.close(); sock.close(); sersock.close();*//*
+    }*/
 }
