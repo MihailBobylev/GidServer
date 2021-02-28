@@ -1,7 +1,10 @@
 import java.io.IOException;
 import java.net.ServerSocket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Server implements Runnable {
+    private final static Logger LOGGER =  Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     private static volatile Server instane = null;
     /* Порт, на который сервер принимает соеденения */
     private final int SERVER_PORT = 5000;
@@ -23,6 +26,7 @@ public class Server implements Runnable {
         try {
             /* Создаем серверный сокет, которые принимает соединения */
             serverSoket = new ServerSocket(SERVER_PORT);
+            LOGGER.log(Level.WARNING, "Start server on port:"+SERVER_PORT);
             System.out.println("Start server on port:"+SERVER_PORT);
             /*  старт приема соединений на сервер */
             while(true) {
